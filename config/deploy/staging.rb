@@ -19,7 +19,8 @@ set :ssh_options, {
   auth_methods: ["publickey"],
   keys: ["/home/algofocus/pem_files/RegApp.pem"]
 }
-server '18.216.97.200', user: 'ubuntu', roles: %w{web app db}
+server '13.126.198.41', user: 'ubuntu', roles: %w{web app db}
 # ubuntu@18.216.250.170
-# 18.216.97.200
+# 18.216.97.200 #USA server
+# 13.126.198.41 #mumbai server
 

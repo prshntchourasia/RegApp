@@ -85,21 +85,23 @@ Rails.application.configure do
   # config.active_record.dump_schema_after_migration = false
   #  config.action_mailer.delivery_method = :smtp
 # config.action_mailer.default_url_options = { host: 'sitepoint-devise.herokuapp.com' }
-config.action_mailer.default_url_options = { host: '18.216.97.200', port: 80 }
+config.action_mailer.default_url_options = { host: '13.126.198.41', port: 80 }
 
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.perform_deliveries = true
-ActionMailer::Base.raise_delivery_errors = true
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
 
-ActionMailer::Base.smtp_settings = {
-   address: "smtp.yahoo.com",
+config.action_mailer.smtp_settings = {
+   address: "smtp.gmail.com",
    port: 587,
-   domain: "yahoo.com",
+   domain: "gmail.com",
    authentication: "plain",
    # enable_starttls_auto: true,
    # openssl_verify_mode: 'none',
-   user_name: "prshntchourasia@yahoo.com",
-   password: "ALGOFOCUS@9876"
+   # user_name: "prshntchourasia@yahoo.com",
+   # password: "ALGOFOCUS@9876"
+   user_name: "prshntchourasia@gmail.com",
+   password: "9614717391"
 }
 
 # config.action_mailer.smtp_settings = {
