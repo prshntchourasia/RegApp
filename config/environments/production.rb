@@ -82,29 +82,34 @@ Rails.application.configure do
   end
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
-   config.action_mailer.delivery_method = :smtp
+  # config.active_record.dump_schema_after_migration = false
+  #  config.action_mailer.delivery_method = :smtp
 # config.action_mailer.default_url_options = { host: 'sitepoint-devise.herokuapp.com' }
+config.action_mailer.default_url_options = { host: '18.216.97.200', port: 80 }
+
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.perform_deliveries = true
+ActionMailer::Base.raise_delivery_errors = true
 
 ActionMailer::Base.smtp_settings = {
-   address: "smtp.gmail.com",
+   address: "smtp.yahoo.com",
    port: 587,
-   # domain: "algofo",
+   domain: "yahoo.com",
    authentication: "plain",
    # enable_starttls_auto: true,
    # openssl_verify_mode: 'none',
-   user_name: "prshntchourasia@gmail.com",
-   password: "9614717391"
+   user_name: "prshntchourasia@yahoo.com",
+   password: "ALGOFOCUS@9876"
 }
 
 # config.action_mailer.smtp_settings = {
-#    address: "smtp.gmail.com",
+#    address: "smtp.yahoo.com",
 #    port: 587,
 #    # domain: "algofo",
 #    authentication: "plain",
 #    # enable_starttls_auto: true,
 #    # openssl_verify_mode: 'none',
-#    user_name: "prshntchourasia@gmail.com",
-#    password: "9614717391"
+#    user_name: "prshntchourasia@yahoo.com",
+   # password: "ALGOFOCUS@9876"
 # }
 end
