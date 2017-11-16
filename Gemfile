@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 2.5'
 
 # block of custom gems
 gem 'devise'
+gem 'daemons'
+gem 'delayed_job_active_record'
+gem 'devise_zxcvbn'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
