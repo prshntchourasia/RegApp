@@ -17,7 +17,7 @@ set :pty, true
 set :ssh_options, {
   forward_agent: true,
   auth_methods: ["publickey"],
-  keys: ["/home/algofocus/pem_files/RegApp.pem"]
+  keys: ["/home/algofocus/pem_files/mumApp.pem"]
 }
 server '13.126.198.41', user: 'ubuntu', roles: %w{web app db}
 # ubuntu@18.216.250.170
